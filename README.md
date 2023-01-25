@@ -2,7 +2,7 @@
 
 this is an external fork of [Starter: Fullstack MERN site which allows user to add/edit/delete items via CRUD API using MongoDB and TypeScript/ES6-Modules on frontend/backend](https://starters.tanguay.eu/list/mernMongooseBookCrudFullstack)
 
-![grafik](https://user-images.githubusercontent.com/446574/214612264-b78d6e68-a8a9-4d8f-af25-7375a4ac24f5.png)
+![grafik](https://user-images.githubusercontent.com/446574/214612664-714221c9-2aba-4ad6-9b63-9ab334d01e63.png)
 
 ## it adds the following feature
 
