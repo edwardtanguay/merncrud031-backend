@@ -10,7 +10,7 @@
 	},
 	{
 		"username": "edward",
-		"hash": "$2b$12$k7Hb9dloBgKvmkChCOllzedhphg5Ytyorwy8i4efCsdkz164q.6OO",
+		"hash": "CREATE_PASSWORD_HASH",
 		"firstName": "Edward",
 		"lastName": "Tanguay",
 		"accessGroups": [
@@ -21,7 +21,7 @@
 	},
 	{
 		"username": "marina",
-		"hash": "$2b$12$1xfkMZCWmxQLlEy0WNxIJu7Xoyyd.S8d.HV57XWBhi3iI8JBYWEHm",
+		"hash": "CREATE_PASSWORD_HASH",
 		"firstName": "Marina",
 		"lastName": "Merryfeld",
 		"accessGroups": [
@@ -31,7 +31,7 @@
 	},
 	{
 		"username": "victor",
-		"hash": "$2b$12$xbz7rQVKYMAbl4XjOo8//ujnNeG4Y6WYq6iWbg0SDz0y0LzZBC2s.",
+		"hash": "CREATE_PASSWORD_HASH",
 		"firstName": "Victor",
 		"lastName": "Verreldo",
 		"accessGroups": [
@@ -41,7 +41,7 @@
 	},
 	{
 		"username": "miki",
-		"hash": "$2b$12$u17pC73pxRUEqY6WYhAaZOl5BlqxSOKdcG6f08CrnUUgxB26ip8wu",
+		"hash": "CREATE_PASSWORD_HASH",
 		"firstName": "Miki",
 		"lastName": "Merrolda",
 		"accessGroups": [
