@@ -60,7 +60,7 @@ app.post('/login', async (req: express.Request, res: express.Response) => {
 			req.session.user = user as any;
 			req.session.cookie.expires = new Date(Date.now() + config.SECONDS_TILL_SESSION_TIMEOUT * 1000);
 			req.session.save();
-			res.status(200).send('ok');
+			res.status(200).send(user);
 		} else {
 			res.status(401).send({});
 		}
