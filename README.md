@@ -14,3 +14,25 @@ this is an external fork of [Starter: Fullstack MERN site which allows user to a
 - [/login route](https://github.com/edwardtanguay/merncrud031-backend/blob/0f9961bfd81fe36f3578ae8a3aa28773f6c04e35/src/server.ts#L54) was updated to compare hashes of specific users instead of check the plain-text admin password
 - [tools.passwordIsCorrect()](https://github.com/edwardtanguay/merncrud031-backend/blob/0f9961bfd81fe36f3578ae8a3aa28773f6c04e35/src/tools.ts#L3) was added to compare the bcrypt hashes
 - [model.getUser()](https://github.com/edwardtanguay/merncrud031-backend/blob/0f9961bfd81fe36f3578ae8a3aa28773f6c04e35/src/model.ts#L27) was added to get the user in order to compare the hashes
+
+## install
+
+- create MongoDB database e.g. `merncrud031` with two collections
+  - `books` - import `dev/books.json`
+  - `users` - import `dev/users.json`
+- create password-hashes with `npm run bcrypt`
+- create **.env** file and make any necessary changes
+
+``` text
+APP_NAME = Book Site API
+SECONDS_TILL_SESSION_TIMEOUT = 3600
+PORT = 3100
+MONGODB_CONNECTION = mongodb://localhost:27017/merncrud031
+SESSION_SECRET = ksjfkdj2384sdfj
+ADMIN_PASSWORD = 123
+FRONTEND_URL = http://localhost:3101
+NODE_ENVIRONMENT = development
+```
+
+- `npm i`
+- `npm run dev`
