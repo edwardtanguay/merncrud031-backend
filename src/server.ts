@@ -2,7 +2,7 @@ import * as model from './model.js';
 import express from 'express';
 import cors from 'cors';
 import * as config from './config.js';
-import { INewBook } from './interfaces.js';
+import { IFrontendUser, INewBook } from './interfaces.js';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import * as tools from './tools.js';
@@ -57,10 +57,17 @@ app.post('/login', async (req: express.Request, res: express.Response) => {
 	if (user !== null) {
 		const isCorrect = await tools.passwordIsCorrect(password, user.hash);
 		if (isCorrect) {
-			req.session.user = user as any;
+			const frontendUser = {
+				_id: user._id,
+				username: user.username,
+				firstName: user.firstName,
+				lastName: user.lastName,
+				accessGroups: user.accessGroups
+			}
+			req.session.user = frontendUser as IFrontendUser;
 			req.session.cookie.expires = new Date(Date.now() + config.SECONDS_TILL_SESSION_TIMEOUT * 1000);
 			req.session.save();
-			res.status(200).send(user);
+			res.status(200).send(frontendUser);
 		} else {
 			res.status(401).send({});
 		}
