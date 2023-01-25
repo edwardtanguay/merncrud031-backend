@@ -2,6 +2,8 @@
 
 this is an external fork of [Starter: Fullstack MERN site which allows user to add/edit/delete items via CRUD API using MongoDB and TypeScript/ES6-Modules on frontend/backend](https://starters.tanguay.eu/list/mernMongooseBookCrudFullstack)
 
+![grafik](https://user-images.githubusercontent.com/446574/214612264-b78d6e68-a8a9-4d8f-af25-7375a4ac24f5.png)
+
 ## it adds the following feature
 
 - **admin login** has been replaced by **multiuser login**
