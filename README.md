@@ -20,8 +20,8 @@ this is an external fork of [Starter: Fullstack MERN site which allows user to a
 ## install
 
 - create MongoDB database e.g. `merncrud031` with two collections
-  - `books` - import `dev/books.json`
-  - `users` - import `dev/users.json`
+  - `books` - import from `dev/books.json`
+  - `users` - import from `dev/users.json`
 - create password-hashes with `npm run bcrypt`
 - create **.env** file and make any necessary changes
 
